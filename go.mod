@@ -1,4 +1,4 @@
-module go.zenithar.org/typogenerator
+module github.com/ddsgok/gtypo
 
 go 1.12
 

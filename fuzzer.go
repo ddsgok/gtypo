@@ -1,7 +1,7 @@
-package typogenerator
+package gtypo
 
 import (
-	"go.zenithar.org/typogenerator/strategy"
+	"github.com/ddsgok/gtypo/strategy"
 
 	"github.com/weppos/publicsuffix-go/publicsuffix"
 )

@@ -1,13 +1,16 @@
 package strategy_test
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/ddsgok/gtypo/strategy"
 )
 
-func TestOmission(t *testing.T) {
-	out, err := strategy.Omission.Generate("zemithar", "")
+func TestCase(t *testing.T) {
+	out, err := strategy.Case.Generate("start", "")
+	fmt.Println(out)
+
 	if err != nil {
 		t.Fail()
 		t.Fatal("Error should not occurs !", err)
@@ -17,7 +20,7 @@ func TestOmission(t *testing.T) {
 		t.FailNow()
 	}
 
-	if len(out) != 8 {
-		t.FailNow()
-	}
+	// if len(out) != 90 {
+	// 	t.FailNow()
+	// }
 }

@@ -3,7 +3,7 @@ package strategy_test
 import (
 	"testing"
 
-	"go.zenithar.org/typogenerator/strategy"
+	"github.com/ddsgok/gtypo/strategy"
 )
 
 func TestPrefix(t *testing.T) {

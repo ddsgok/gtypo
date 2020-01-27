@@ -7,9 +7,9 @@ import (
 
 	"golang.org/x/net/idna"
 
-	"go.zenithar.org/typogenerator"
-	"go.zenithar.org/typogenerator/mapping"
-	"go.zenithar.org/typogenerator/strategy"
+	"github.com/ddsgok/gtypo"
+	"github.com/ddsgok/gtypo/mapping"
+	"github.com/ddsgok/gtypo/strategy"
 
 	"github.com/hduplooy/gocsv"
 	"github.com/namsral/flag"
@@ -49,7 +49,7 @@ func main() {
 		strategy.Similar(mapping.German),
 	}
 
-	results, err := typogenerator.Fuzz(*input, all...)
+	results, err := gtypoerator.Fuzz(*input, all...)
 	if err != nil {
 		log.Fatal("Unable to generate domains.")
 	}

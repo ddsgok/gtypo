@@ -3,8 +3,8 @@ package strategy_test
 import (
 	"testing"
 
-	"go.zenithar.org/typogenerator/mapping"
-	"go.zenithar.org/typogenerator/strategy"
+	"github.com/ddsgok/gtypo/mapping"
+	"github.com/ddsgok/gtypo/strategy"
 )
 
 func TestReplace(t *testing.T) {

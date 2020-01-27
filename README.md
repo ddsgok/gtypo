@@ -1,4 +1,4 @@
-# Typogenerator: a typosquatting generator in Golang
+# gtypoerator: a typosquatting generator in Golang
 
 A Golang typosquat generator utilizing various strategies to generate potential variants of a string. Some strategies are similar to those utilized by [dnstwist](https://github.com/elceef/dnstwist). This library is not intended to be a complete port of dnstwist and may include additional strategies.
 
@@ -14,7 +14,7 @@ all := []strategy.Strategy{
 	strategy.Repetition,
 }
 
-results, err := typogenerator.Fuzz("zenithar", all...)
+results, err := gtypoerator.Fuzz("zenithar", all...)
 if err != nil {
 	fmt.Println(err)
 }
@@ -40,7 +40,7 @@ all := []strategy.Strategy{
 	strategy.Repetition,
 }
 
-results, err := typogenerator.FuzzDomain("example.com", all...)
+results, err := gtypoerator.FuzzDomain("example.com", all...)
 if err != nil {
 	fmt.Println(err)
 }
@@ -60,6 +60,7 @@ for _, r := range results {
 
 ## Fuzzing Algorithms (strategies)
 
+1. **Case** - Swapping cases on string
 1. **Addition** - Addition of a single character to the end of a string
 1. **BitSquatting** - Generates a string with one bit difference from the input
 1. **DoubleHit** - Addition of a single character that is adjacent to each character (double hitting of a key)
